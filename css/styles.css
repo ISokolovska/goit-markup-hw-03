@@ -1,0 +1,235 @@
+/* цвет основного теста rgba(33, 33, 33, 1) */
+/* вторичный цвет теста rgba(117, 117, 117, 1) */
+/* третичный цвет теста rgba(255, 255, 255, 0.6) */
+/* цвет лого черный rgba(0, 0, 0, 1) */
+/* цвет лого синий, bcg Button, hover rgba(33, 150, 243, 1) */
+/* цвет основного фона, color hero, color Button rgba(255, 255, 255, 1) */
+/* вторичный цвет фона, bcg Button secondary rgba(245, 244, 250, 1) */
+/* третичный цвет фона footer, фона hero rgba(47, 48, 58, 1) */
+
+:root {
+    --primary-text-color: rgba(33, 33, 33, 1);
+    --secondary-text-color: rgba(117, 117, 117, 1);
+    --tertiary-text-color: rgba(255, 255, 255, 0.6);
+    --accent-color: rgba(33, 150, 243, 1);
+    --logo-first-color: rgba(0, 0, 0, 1);
+    --button-text-color: rgba(255, 255, 255, 1);
+    --bcg-button-color: rgba(245, 244, 250, 1);
+    --bcg-hero-color: rgba(47, 48, 58, 1);
+}
+
+body {
+    background-color: var(--button-text-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Site nav */
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo-first {
+    color: var(--accent-color);   
+}
+
+.logo-second {
+    color: var(--logo-first-color);
+}
+
+.logo-third {
+    color: var(--button-text-color);
+}
+
+.site-nav .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.auth-nav .link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.auth-nav .link:hover, 
+.auth-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--bcg-hero-color);
+}
+
+.hero-title {
+    color: var(--button-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Button-Hero */
+
+.button {  
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+/* Button-Portfolio */
+
+.section .button {
+    background-color: var(--button-text-color);
+}
+
+.button.secondary {
+    background-color: var(--bcg-button-color);
+    color: var(--primary-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.button .button.secondary:hover,
+.button .button.secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+}
+
+/* Section */
+ 
+.section .title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.section .title-none {
+    display: none;
+}
+
+/* Features */
+
+.features .title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.features .text {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Command */
+
+.section.command {
+    background-color: var(--bcg-button-color);
+}
+
+.command.list .title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.command.list .post {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--bcg-hero-color);
+}
+
+.footer .address {
+    color: var(--button-text-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+
+}
+
+.footer .address:hover,
+.footer .address:hover {
+    color: var(--accent-color);
+}
+
+.footer .connect {
+    color: var(--tertiary-text-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.footer .connect:hover,
+.footer .connect:focus {
+    color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.projects .title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects .text {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.9;    
+}
+
+
+
