@@ -33,14 +33,6 @@ body {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 /* Site nav */
 .main-nav {
     display: flex;
@@ -167,7 +159,7 @@ p {
 
 /* Button-Hero */
 
-.button {
+.button.primary {
     border-radius: 4px;
     border: transparent;
     padding: 10px 32px;
@@ -200,6 +192,14 @@ p {
     background-color: var(--button-text-color);
 }
 
+ul.button.list {
+    display: flex;
+    justify-content: center;
+}
+
+.button.list .item + .item {
+    margin-left: 8px;
+}
 .button.secondary {
     display: inline-block;
     border-radius: 4px;
@@ -287,10 +287,12 @@ ul.features.list {
 
 /* Command */
 
+
 .command.list {
     display: flex;
     justify-content: space-between;
 }
+
 
 .command.list .item {
     background-color: var(--button-text-color);
@@ -366,6 +368,8 @@ ul.features.list {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    text-align: left;
+    
 }
 
 .projects h2.title {
@@ -373,9 +377,12 @@ ul.features.list {
 }
 
 .projects .text {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.9;
+    text-align: left;
 }
 
 .section ul.button.list {
@@ -390,6 +397,27 @@ ul.features.list {
     margin-bottom: 20px;
 }
 
+.container .projects.list {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 ul.projects.list {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 94px;
+}
+
+.projects.item {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.projects.item:nth-child(3n) {
+    margin-right: 0; 
 }
